@@ -1,0 +1,37 @@
+.card {
+    max-width: 378px;
+    max-height: 378px;
+    position: relative;
+    border-radius: 6.2px;
+    background-size: cover;
+    overflow: hidden;
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+    &__content {
+        position: absolute;
+        bottom: 28px;
+        left: 28px;
+        max-width: 303px;
+        &-img {
+            margin-bottom: 8px;
+        }
+        &-title {
+            margin-bottom: 7px;
+            font-family: 'Rubik';
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 33px;
+            color: #FFFFFF;
+        }
+        &-desc {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+}

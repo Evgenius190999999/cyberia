@@ -1,0 +1,115 @@
+.footer {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #EEF3FF;
+        padding: 130px 0 150px;
+    }
+    &__logo {
+        max-width: 207px;
+        margin-right: 146px;
+        img {
+            margin-bottom: 33px;
+        }
+    }
+    &__info {
+        &-phone {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: 2fr 1fr 1fr;
+            column-gap: 80px;
+            margin-right: 70px;
+            a {
+                display: block;
+                margin-bottom: 23px;
+                color: #EEF3FF;
+                text-decoration: none;
+            }
+        }
+    }
+    &__about {
+        max-width: 359px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .footer__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__info-phone {
+        margin-bottom: 56px;
+    }
+    .footer__about {
+        p {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 882px) {
+    .footer__logo {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 826px) {
+    .footer__logo {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 772px) {
+    .footer__logo {
+        margin-right: 20px;
+    }
+    .footer__info-phone {
+        column-gap: 40px;
+    }
+}
+
+@media (max-width: 666px) {
+    .footer__logo {
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+    .footer__info-phone {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 560px)  {
+    .footer__logo {
+        margin-right: 0px;
+    }
+    .footer__logo-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 376px)  {
+    .footer__wrapper {
+        padding-top: 30px;
+    }
+    .footer__info-phone {
+        a {
+            font-size: 13px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+    .footer__info-phone {
+        margin-bottom: 47px;
+    }
+    .footer__about {
+        p {
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+}
